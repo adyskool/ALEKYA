@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALEKYA — Real Estate</title>
+  <meta name="description" content="ALEKYA Real Estate — properties, services, contact and careers." />
+  <style>
+    :root{--accent:#0b6b5a;--muted:#6b7280;--bg:#f7fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:#0f172a}
+    header{background:linear-gradient(90deg,#ffffffcc, #f0fff9);backdrop-filter:saturate(140%) blur(4px);position:sticky;top:0;z-index:60;border-bottom:1px solid #e6eef0}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:700}
+    .brand .logo{width:48px;height:48px;border-radius:8px;display:inline-grid;place-items:center;background:var(--accent);color:#fff;font-size:18px}
+    nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+    nav a:hover{color:var(--accent);background:#eef9f4}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:56px 0}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    .muted-btn{background:#fff;border:1px solid #e2e8f0;padding:10px 16px;border-radius:10px}
+
+    /* Cards */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(9,30,40,0.04)}
+    .card h3{margin:8px 0}
+    .property-img{height:180px;border-radius:10px;background-size:cover;background-position:center}
+
+    /* Sections */
+    section{padding:44px 0}
+    section h2{font-size:22px;margin:0 0 10px}
+    .lead{color:var(--muted);margin-bottom:18px}
+
+    /* Contact */
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form input, form textarea{padding:12px;border:1px solid #e6eef0;border-radius:8px}
+    form textarea{grid-column:1/-1;min-height:120px}
+
+    footer{background:#021e1a;color:#dff6f0;padding:34px 0;margin-top:34px}
+    footer .fgrid{display:grid;grid-template-columns:1fr 280px;gap:24px}
+    .small{font-size:13px;color:#bfe9dd}
+    .socials{display:flex;gap:8px}
+
+    /* Responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr;padding:30px 0}.grid-3{grid-template-columns:1fr 1fr}.nav{padding:8px 0}}
+    @media (max-width:640px){.grid-3{grid-template-columns:1fr}.brand-text{display:none}.container{padding:16px}form{grid-template-columns:1fr}}
+
+    /* tiny utility */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <div style="font-size:14px">ALEKYA</div>
+          <div class="small muted">Premium Real Estate</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO / PAGE: HOME -->
+    <section id="home" class="hero" aria-label="Home - ALEKYA">
+      <div>
+        <h1>Welcome to ALEKYA — Your Trusted Real Estate Partner</h1>
+        <p class="lead">ALEKYA helps you find, buy and invest in properties across Telangana with transparent processes and expert guidance. ALEKYA builds relationships and delivers value.</p>
+        <div class="cta">
+          <a class="btn" href="#properties">Explore Properties</a>
+          <a class="muted-btn" href="#contact">Request Consultation</a>
+        </div>
+
+        <div style="margin-top:24px" class="card">
+          <strong>Why ALEKYA?</strong>
+          <ul class="muted" style="margin:8px 0 0;padding-left:18px">
+            <li>Local expertise in Nalgonda and Telangana</li>
+            <li>Verified listings and transparent PAN-backed accounts (PAN: AAQCA1270KI)</li>
+            <li>End-to-end support from search to closing</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <div style="background-image:url('https://images.unsplash.com/photo-1560184897-6a2ea6aa1b7b?auto=format&fit=crop&w=800&q=60');" class="property-img" role="img" aria-label="ALEKYA property"></div>
+          <h3>Featured by ALEKYA</h3>
+          <p class="muted">Spacious 3 BHK near Nalgonda college — managed by ALEKYA.</p>
+          <div style="margin-top:12px"><a class="btn" href="#contact">Enquire Now</a></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About ALEKYA</h2>
+      <p class="lead">ALEKYA is a Nalgonda-based real estate company focused on residential and commercial properties. ALEKYA's mission is to simplify property ownership with trust, verified documentation and excellent customer service.</p>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="card">
+          <h3>ALEKYA — Our Vision</h3>
+          <p class="muted">Build communities, deliver quality, and provide investment growth.</p>
+        </div>
+        <div class="card">
+          <h3>ALEKYA — Our Team</h3>
+          <p class="muted">Experienced local agents, legal advisors and customer support dedicated to your property journey.</p>
+        </div>
+        <div class="card">
+          <h3>ALEKYA — Compliance</h3>
+          <p class="muted">We operate transparently — PAN AAQCA1270KI. ALEKYA keeps records and communicates every step with clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTIES -->
+    <section id="properties">
+      <h2>Properties by ALEKYA</h2>
+      <p class="lead">Browse a curated selection of properties managed and listed by ALEKYA.</p>
+      <div class="grid-3" style="margin-top:18px">
+        <article class="card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1572120360610-d971b9b3a0b4?auto=format&fit=crop&w=1000&q=60')"></div>
+          <h3>ALEKYA Residency — 3 BHK</h3>
+          <p class="muted">Prime location, near Earpra Gathi College. Contact ALEKYA for pricing.</p>
+        </article>
+        <article class="card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=60')"></div>
+          <h3>ALEKYA Heights — 2 BHK</h3>
+          <p class="muted">Modern finishes and easy EMI options. Listed by ALEKYA.</p>
+        </article>
+        <article class="card">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1000&q=60')"></div>
+          <h3>ALEKYA Commercial Plaza</h3>
+          <p class="muted">Commercial plots and retail spaces handled end-to-end by ALEKYA.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services — ALEKYA</h2>
+      <p class="lead">Services provided by ALEKYA from valuation to registration and property management.</p>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="card">
+          <h3>Property Listing (ALEKYA)</h3>
+          <p class="muted">Professional photos, verified documents, and premium listing placement by ALEKYA.</p>
+        </div>
+        <div class="card">
+          <h3>Legal & Registration</h3>
+          <p class="muted">ALEKYA coordinates with legal partners for smooth registration and paperwork.</p>
+        </div>
+        <div class="card">
+          <h3>Post-Sale Management</h3>
+          <p class="muted">From tenant management to maintenance, ALEKYA helps you protect your investment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREERS -->
+    <section id="careers">
+      <h2>Careers at ALEKYA</h2>
+      <p class="lead">Join ALEKYA — we're hiring local agents, marketing associates and operations staff.</p>
+      <div class="card" style="margin-top:12px">
+        <p class="muted">Interested? Email us at careers@alekya.example (placeholder) with "ALEKYA Careers" in the subject and your resume.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact ALEKYA</h2>
+      <p class="lead">Get in touch with ALEKYA for enquiries, property visits or partnerships.</p>
+      <div class="card" style="margin-top:12px">
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <input type="text" name="name" placeholder="Your name (required) — ALEKYA client" required />
+          <input type="email" name="email" placeholder="Email (required)" required />
+          <input type="text" name="phone" placeholder="Phone number" />
+          <textarea name="message" placeholder="Message — mention ALEKYA property or service"></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+        <p id="formStatus" class="muted" style="margin-top:12px"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container fgrid">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div class="logo">A</div>
+          <div>
+            <div style="font-weight:700">ALEKYA</div>
+            <div class="small">Real Estate | Nalgonda, Telangana</div>
+          </div>
+        </div>
+
+        <p class="small" style="margin-top:12px">Address: HNO3-8-459/1 ANAND NAGAR OPP NEW COLLECTO RATE, HNO2 SRI LAXMINGR COLONY NEAR PRA GATHI COLLEGE, NALGONDA, Nalgonda, Telangana, India, 508001</p>
+        <p class="small">PAN: <strong>AAQCA1270KI</strong></p>
+
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <!-- repeating brand name several times to ensure minimum 10+ mentions across site -->
+          <span class="small">ALEKYA</span>
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;justify-content:space-between">
+          <div>
+            <div class="small" style="font-weight:700">Quick Links</div>
+            <div class="small muted" style="margin-top:8px">Home — ALEKYA</div>
+            <div class="small muted">Properties — ALEKYA</div>
+            <div class="small muted">Services — ALEKYA</div>
+          </div>
+          <div>
+            <div class="small" style="font-weight:700">Contact</div>
+            <div class="small muted" style="margin-top:8px">Phone: +91 90000 00000 (placeholder)</div>
+            <div class="small muted">Email: info@alekya.example</div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px" class="small">© <strong>ALEKYA</strong> — ALEKYA All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple single-file navigation: smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target=document.querySelector(a.getAttribute('href'));
+        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}
+      })
+    });
+
+    // Fake contact submit (front-end only)
+    function handleSubmit(e){
+      e.preventDefault();
+      const status=document.getElementById('formStatus');
+      status.textContent='Thanks — your message to ALEKYA has been received (demo).';
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
